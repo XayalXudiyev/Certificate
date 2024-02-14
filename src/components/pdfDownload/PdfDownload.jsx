@@ -12,31 +12,22 @@ export default function PdfDownload() {
   const downloadPdf = useReactToPrint({ content: () => certificateRef.current, });
 
   return (
-    <div className="m-auto mt-6 flex flex-col gap-[1px]">
+    <div className="m-auto   flex flex-col gap-[1px]">
       <div className="overflow-hidden flex flex-col gap-1" ref={certificateRef}>
-      <Hero />
-      <div className='w-full flex justify-end'>
+    
+      <div >
         <SelectPerson />
       </div>
       <Main />
       <Signature />
-        {/* this is the content that will be printed */}
       </div>
-      <div className="download-container self-center">
-        <button onClick={downloadPdf} className="bg-slate-200 rounded-lg px-[10px] py-[6px]">
+      <div className="self-end w-full px-10 my-4">
+        <button onClick={downloadPdf} className="bg-indigo-800 w-full  text-white rounded-lg  py-3 hover:bg-indigo-700 hover:scale-105 hover:text-lg">
           Download
         </button>
       </div>
     
-      <style>
-        {`
-          @media print {
-            @page {
-              size: 238mm 372mm;
-            }
-          }
-        `}
-      </style>
+    
     </div>
   );
 }

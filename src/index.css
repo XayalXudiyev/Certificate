@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+body::-webkit-scrollbar{
+    width: 0;
+}
+
 textarea::-webkit-scrollbar{
     width: 0;
 }
+
+textarea { resize: none; }
