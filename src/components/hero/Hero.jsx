@@ -1,10 +1,10 @@
 import React from 'react';
 
 const imageMap = {
-    'Data Analyst': '../../../public/hero/bg1.png',
-    'Participant': '../../../public/hero/bg1.png',
-    'Data Scientist': '../../../public/hero/bg1.png',
-    'Junior Data Scientist': '../../../public/hero/bg1.png',
+    'Data Analyst': '/hero/bg1.png',
+    'Participant': '/hero/bg2.png',
+    'Data Scientist': '/hero/bg1.png',
+    'Junior Data Scientist': '/hero/bg1.png',
 };
 
 const Hero = ({ value = 'Data Analyst' }) => {
