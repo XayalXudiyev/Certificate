@@ -23,7 +23,7 @@ const Select = () => {
       <div className=' '>
         <Hero value={selectedValue} />
       </div>
-      <div className='   flex justify-end'>
+      <div className='flex justify-end'>
 
       <Dropdown options={options} onChange={handleOptionChange} />
       </div>
