@@ -9,7 +9,7 @@ const Content = () => {
     <div>
       <div className='px-10 font-montserrat'>
 
-        <textarea rows='1' className='w-full focus:outline-none capitalize pb-6 font-light text-5xl'>Murad cavadov</textarea>
+        <textarea rows='1' className='w-full focus:outline-none capitalize pb-6 font-light text-5xl'>Xəyal xudiyev</textarea>
 
 
         <textarea rows="4 " className='w-full focus:outline-none text-xl text-justify leading-[22px] font-medium   tracking-wide '>
