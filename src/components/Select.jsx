@@ -19,11 +19,11 @@ const Select = () => {
   };
 
   return (
-    <div className='p-5'>
+    <div className='p-5 pb-0'>
       <div className=' '>
         <Hero value={selectedValue} />
       </div>
-      <div className='flex justify-end font-montserrat font-bold text-sm'>
+      <div className='flex justify-end font-montserrat font-bold'>
 
       <Dropdown options={options} onChange={handleOptionChange} />
       </div>

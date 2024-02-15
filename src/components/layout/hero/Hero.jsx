@@ -11,7 +11,7 @@ const Hero = ({ value = 'Data Analyst' }) => {
     const imageUrl = imageMap[value];
 
     return (
-        <div className='relative bg-slate-500'>
+        <div className='relative '>
             <img src={imageUrl} alt="" className='w-full' />
             <h1 className='absolute inset-0 pl-16 text-start flex items-center text-7xl tracking-wide  leading-tight text-white font-montserrat font-light'>Data Science Academy <br /> Certificate</h1>
         </div>
