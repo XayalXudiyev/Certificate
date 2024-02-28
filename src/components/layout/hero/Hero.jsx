@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useMainContext } from '../../../context/context';
 
 const imageMap = {
     'Data Analyst': '/hero/analyst.svg',
@@ -7,8 +8,9 @@ const imageMap = {
     'Junior Data Scientist': '/hero/junior.svg',
 };
 
-const Hero = ({ value = 'Data Analyst' }) => {
-    const imageUrl = imageMap[value];
+const Hero = () => {
+    const { selectedValue } = useMainContext();
+    const imageUrl = imageMap[selectedValue];
 
     return (
         <div className='relative '>
@@ -19,4 +21,3 @@ const Hero = ({ value = 'Data Analyst' }) => {
 };
 
 export default Hero;
- 

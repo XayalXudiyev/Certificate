@@ -2,30 +2,22 @@
 import React from 'react';
 import Dropdown from './Dropdown';
 import Hero from './layout/hero/Hero'
-import { useState } from 'react';
+import { useMainContext } from '../context/context';
 
 const Select = () => {
-  const options = [
-    { value: 'Data Analyst' },
-    { value: 'Participant' },
-    { value: 'Data Scientist' },
-    { value: 'Junior Data Scientist' },
-  ];
 
-  const [selectedValue, setSelectedValue] = useState(options[0].value);
 
-  const handleOptionChange = (selectedOption) => {
-    setSelectedValue(selectedOption.value);
-  };
+  const { options, selectedValue, handleOptionChange } = useMainContext()
+
 
   return (
     <div className='p-5 pb-0'>
       <div className=' '>
-        <Hero value={selectedValue} />
+        <Hero />
       </div>
       <div className='flex justify-end font-montserrat font-bold'>
 
-      <Dropdown options={options} onChange={handleOptionChange} />
+        <Dropdown options={options} onChange={handleOptionChange} />
       </div>
     </div>
   );
