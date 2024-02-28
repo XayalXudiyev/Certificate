@@ -15,7 +15,7 @@ export default function PdfDownload() {
         <Content />
       </div>
       <div className="self-end w-full px-10 my-4">
-        <button onClick={downloadPdf} className="bg-indigo-800 w-full  text-white rounded-lg  py-3 hover:bg-indigo-700 hover:scale-105 hover:text-lg">
+        <button onClick={downloadPdf} className="bg-indigo-800 w-full  text-white rounded-lg  py-3 hover:bg-indigo-700">
           Download
         </button>
         <h1 className="mt-2">&copy; 2024 by Xəyal C. Xudiyev</h1>
