@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '/logo/logo.svg'
 import Signature from '/imza.svg'
+import Mlk from '/mlk.jpg'
 import { useMainContext } from '../../../context/context'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -37,12 +38,12 @@ const Content = () => {
     setContent(newContent);
   }, [selectedValue]);
 
-  
+
   return (
     <div>
       <div className='px-10 font-montserrat'>
-        <textarea   rows='1' className='w-full focus:outline-none capitalize pb-6 font-light text-5xl'>Xəyal xudiyev</textarea>
-        <textarea onChange={(e) => setTitle(e.target.value)}  value={title} rows="4" className='title  w-full focus:outline-none text-xl text-justify leading-[22px] font-medium tracking-wide '>
+        <textarea rows='1' className='w-full focus:outline-none capitalize pb-6 font-light text-5xl'>Xəyal xudiyev</textarea>
+        <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title  w-full focus:outline-none text-xl text-justify leading-[22px] font-medium tracking-wide '>
           {title}
         </textarea>
         <textarea rows="1" className='w-full focus:outline-none text-2xl pt text-[#e2175c] font-bold'>Data Science Bootcamp</textarea>
@@ -53,6 +54,10 @@ const Content = () => {
 
       <div className='flex-col px-10'>
         <div className='flex justify-between items-end'>
+
+
+
+
           <div className='flex gap-16 text-start'>
             <div className='pt-2 relative'>
               <img src={Signature} alt="" className='absolute bottom-6 m-2' />
@@ -62,7 +67,22 @@ const Content = () => {
               <p className='font-medium text-lg'>Etibar Huseynli</p>
               <p className='text-sm font-light leading-3'>Chief Data Scientist</p>
             </div>
+            <div className='pt-2 relative'>
+              <img src={Mlk} alt="" className='absolute bottom-11 left-10  w-24' />
+
+              <hr className='' />
+
+              <p className='font-medium text-lg'>Mələkxanım Qurbanova</p>
+              <p className='text-sm font-light leading-3'>Program Manager</p>
+            </div>
           </div>
+
+
+
+
+
+
+
           <div>
             <img src={Logo} alt="" className='w-72' />
           </div>
