@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '/logo/logo.svg'
 import Signature from '/imza.svg'
 import { useMainContext } from '../../../context/context'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 
@@ -25,19 +27,26 @@ const Content = () => {
       'content': "This specialization provided the learner with knowledge of data cleaning, visualization, machine learning and programming using R, Python, Tableau, SPSS, SPSS Modeler, SQL, Hadoop, Spark, Spark SQL, Spark MLlib, Pytorch, AWS, Mongo DB, MapReduce, Hive and Tensorflow tools simultaneously. The participant successfully completed the Data Science Bootcamp with excellent grades and has the necessary programming, analytical, technical, research, business, and software skills such as SPSS, SQL, visualization tools, and to some extent R and Python. A Junior Data Scientist is able to work in a team, possessing a passion for data science and data analysis, machine learning and creating specific systems and tracking how they perform over time, is capable of inspecting, cleansing, describing, transforming and modeling data with the goal of discovering useful information with coding skills."
     }
   };
-
   const { selectedValue } = useMainContext();
-  const { title, content } = contentData[selectedValue];
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
 
+  useEffect(() => {
+    const { title: newTitle, content: newContent } = contentData[selectedValue];
+    setTitle(newTitle);
+    setContent(newContent);
+  }, [selectedValue]);
+
+  
   return (
     <div>
       <div className='px-10 font-montserrat'>
-        <textarea rows='1' className='w-full focus:outline-none capitalize pb-6 font-light text-5xl'>Xəyal xudiyev</textarea>
-        <textarea value={title} rows="4" className='w-full focus:outline-none text-xl text-justify leading-[22px] font-medium tracking-wide '>
+        <textarea   rows='1' className='w-full focus:outline-none capitalize pb-6 font-light text-5xl'>Xəyal xudiyev</textarea>
+        <textarea onChange={(e) => setTitle(e.target.value)}  value={title} rows="4" className='title  w-full focus:outline-none text-xl text-justify leading-[22px] font-medium tracking-wide '>
           {title}
         </textarea>
         <textarea rows="1" className='w-full focus:outline-none text-2xl pt text-[#e2175c] font-bold'>Data Science Bootcamp</textarea>
-        <textarea value={content} rows="8" className='w-full focus:outline-none tracking-wide text-justify leading-4 font-medium my-2'>
+        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="8" className='content w-full focus:outline-none tracking-wide text-justify leading-5 font-medium my-2'>
           {content}
         </textarea>
       </div>
