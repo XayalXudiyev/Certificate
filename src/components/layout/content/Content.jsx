@@ -72,7 +72,7 @@ const Content = () => {
 
               <hr className='' />
 
-              <p className='font-medium text-lg'>Mələkxanım Qurbanova</p>
+              <p className='font-medium text-lg'>Malakkhanim Gurbanova</p>
               <p className='text-sm font-light leading-3'>Program Manager</p>
             </div>
           </div>
