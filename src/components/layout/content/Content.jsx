@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '/logo/logo.svg'
 import Signature from '/imza.svg'
-import Mlk from '/mq.png'
+import Mlk from '/mlk.svg'
 import { useMainContext } from '../../../context/context'
 import { useState } from 'react'
 import { useEffect } from 'react'
