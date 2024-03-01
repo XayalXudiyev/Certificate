@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '/logo/logo.svg'
 import Signature from '/imza.svg'
-import Mlk from '/mlk.jpg'
+import Mlk from '/mq.png'
 import { useMainContext } from '../../../context/context'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -68,7 +68,7 @@ const Content = () => {
               <p className='text-sm font-light leading-3'>Chief Data Scientist</p>
             </div>
             <div className='pt-2 relative'>
-              <img src={Mlk} alt="" className='absolute bottom-11 left-10  w-24' />
+              <img src={Mlk} alt="" className='absolute bottom-9 left-10  w-24' />
 
               <hr className='' />
 
