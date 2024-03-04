@@ -1,13 +1,14 @@
 import React from 'react'
 import Logo from '/logo/logo.svg'
-import Signature from '/imza.svg'
-import Mlk from '/mlk.svg'
+import EtibarM from '/signatures/EtibarM.svg'
+import Malakkhanim from '/signatures/Melekxanim.svg'
+import Cavid from '/signatures/Cavid.svg'
 import { useMainContext } from '../../../context/context'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
 
-
+Malakkhanim
 const Content = () => {
   const contentData = {
     'Data Analyst': {
@@ -60,7 +61,7 @@ const Content = () => {
 
           <div className='flex gap-16 text-start'>
             <div className='pt-2 relative'>
-              <img src={Signature} alt="" className='absolute bottom-6 m-2' />
+              <img src={EtibarM} alt="" className='absolute bottom-6 m-2' />
 
               <hr className='' />
 
@@ -68,13 +69,19 @@ const Content = () => {
               <p className='text-sm font-light leading-3'>Chief Data Scientist</p>
             </div>
             <div className='pt-2 relative'>
-              <img src={Mlk} alt="" className='absolute bottom-9 left-10  w-24' />
-
+              <img src={Malakkhanim} alt="" className='absolute bottom-9 left-10  w-24' />
               <hr className='' />
-
               <p className='font-medium text-lg'>Malakkhanim Gurbanova</p>
               <p className='text-sm font-light leading-3'>Program Manager</p>
             </div>
+            <div className='pt-2 relative'>
+              <img src={Cavid} alt="" className='absolute bottom-3 block w-svw ' />
+              <hr className='' />
+              <p className='font-medium text-lg'>Javid Mammadov</p>
+              <p className='text-sm font-light leading-3'>Career Advisor</p>
+            </div>
+
+
           </div>
 
 
