@@ -42,13 +42,13 @@ const Content = () => {
 
   return (
     <div>
-      <div className='px-10 font-montserrat'>
-        <textarea rows='1' className='w-full focus:outline-none capitalize pb-6 font-light text-5xl'>Xəyal xudiyev</textarea>
+      <div className='px-16 font-montserrat'>
+        <textarea rows='1' className='w-full focus:outline-none capitalize pb-2 font-light text-5xl'>Xəyal xudiyev</textarea>
         <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title  w-full focus:outline-none text-xl text-justify leading-[22px] font-medium tracking-wide '>
           {title}
         </textarea>
-        <textarea rows="1" className='w-full focus:outline-none text-2xl pt text-[#e2175c] font-bold'>Data Science Bootcamp</textarea>
-        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="8" className='content w-full focus:outline-none tracking-wide text-justify leading-5 font-medium my-2'>
+        <textarea rows="1" className='w-full focus:outline-none text-2xl  text-[#e2175c] font-bold'>Data Science Bootcamp</textarea>
+        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="8" className='content w-full focus:outline-none tracking-wide text-justify leading-5 font-medium my-1'>
           {content}
         </textarea>
       </div>
@@ -56,10 +56,7 @@ const Content = () => {
       <div className='flex-col px-10'>
         <div className='flex justify-between items-end'>
 
-
-
-
-          <div className='flex gap-16 text-start'>
+          <div className='flex gap-16 text-start px-8'>
             <div className='pt-2 relative'>
               <img src={EtibarM} alt="" className='absolute bottom-6 m-2' />
 
@@ -75,7 +72,7 @@ const Content = () => {
               <p className='text-sm font-light leading-3'>Program Manager</p>
             </div>
             <div className='pt-2 relative'>
-              <img src={Cavid} alt="" className='absolute bottom-3 block w-svw ' />
+              <img src={Cavid} alt="" className='absolute bottom-11 block w-svw ' />
               <hr className='' />
               <p className='font-medium text-lg'>Javid Mammadov</p>
               <p className='text-sm font-light leading-3'>Career Advisor</p>
@@ -84,17 +81,11 @@ const Content = () => {
 
           </div>
 
-
-
-
-
-
-
           <div>
-            <img src={Logo} alt="" className='w-72' />
+            <img src={Logo} alt="" className='w-72 mr-5 ' />
           </div>
         </div>
-        <div className='flex justify-between items-center mt-8 text-xs '>
+        <div className='flex justify-between items-center mt-6 text-xs px-8 '>
           <p className='text-[#959699]   font-bold'>The validity of certificate can be verified online at : <a href="http://www.dsa.az/verification">www.dsa.az/verification</a></p>
           <div className=' flex  tracking-[5px] pl-9 '>Certificate ID:<textarea className=' tracking-[5px]  focus:outline-none' rows='1'>SQL-8948780</textarea></div>
           <p ><textarea rows="1" className='tracking-[5px] focus:outline-none w-52 text-end'>14 January,2023</textarea></p>
