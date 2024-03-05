@@ -21,7 +21,7 @@
                         {selectedOption ? selectedOption.value : 'Select'}
                     </button>
                 </div>
-                {isOpen && (
+                {isOpen && ( 
                     <div className="absolute right-0 text-sm focus:outline-none ">
                         <div className=" bg-[#c6345d] text-white  rounded-b-lg">
                             {options.map((option, index) => (

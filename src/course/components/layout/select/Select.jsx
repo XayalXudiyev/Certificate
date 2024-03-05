@@ -1,8 +1,8 @@
 
 import React from 'react';
 import Dropdown from './Dropdown';
-import Hero from './layout/hero/Hero'
-import { useMainContext } from '../context/context';
+import Hero from '../hero/Hero'
+import { useMainContext } from '../../../../context/context';
 
 const Select = () => {
 

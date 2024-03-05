@@ -3,12 +3,11 @@ import Logo from '/logo/logo.svg'
 import EtibarM from '/signatures/EtibarM.svg'
 import Malakkhanim from '/signatures/Melekxanim.svg'
 import Cavid from '/signatures/Cavid.svg'
-import { useMainContext } from '../../../context/context'
+import { useMainContext } from '../../../../context/context'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
 
-Malakkhanim
 const Content = () => {
   const contentData = {
     'Data Analyst': {
@@ -77,8 +76,6 @@ const Content = () => {
               <p className='font-medium text-lg'>Javid Mammadov</p>
               <p className='text-sm font-light leading-3'>Career Advisor</p>
             </div>
-
-
           </div>
 
           <div>

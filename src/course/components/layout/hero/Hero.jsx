@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useMainContext } from '../../../context/context';
+import { useMainContext } from '../../../../context/context';
 
 const imageMap = {
     'Data Analyst': '/hero/analyst.svg',
