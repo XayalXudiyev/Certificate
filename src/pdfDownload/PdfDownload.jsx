@@ -1,9 +1,8 @@
+import { Routes,Route } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 import { useRef } from "react";
 import Course from "../course/Course";
 import Intern from "../intern/Intern";
-import { Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
 import Normal from "../intern/normal/Normal";
 import Honors from "../intern/honors/Honors";
 

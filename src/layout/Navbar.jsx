@@ -6,14 +6,6 @@ const Navbar = () => {
 
     const [showInternOptions, setShowInternOptions] = useState(false);
 
-    const handleOptionsHover = () => {
-        setShowInternOptions(true);
-    };
-
-    const handleOptionsLeave = () => {
-        setShowInternOptions(false);
-    };
-    
     return (
         <nav className='container flex items-center justify-around mx-auto  pb-14 pt-5' >
             <div className="relative inline-block text-lg group cursor-pointer">
@@ -26,10 +18,9 @@ const Navbar = () => {
                 </span>
                 <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-black rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
             </div>
-
             <div className="relative inline-block text-lg group cursor-pointer">
-                <span className="
-                relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-black rounded-lg group-hover:text-white"
+                <span
+                    className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-black rounded-lg group-hover:text-white"
                     onMouseEnter={() => { setShowInternOptions(true) }}
                     onMouseLeave={() => { setShowInternOptions(false) }}
                 >
