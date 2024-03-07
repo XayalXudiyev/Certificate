@@ -2,7 +2,6 @@ import { Routes,Route } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 import { useRef } from "react";
 import Course from "../course/Course";
-import Intern from "../intern/Intern";
 import Normal from "../intern/normal/Normal";
 import Honors from "../intern/honors/Honors";
 
@@ -17,7 +16,6 @@ export default function PdfDownload() {
       <div className="" ref={certificateRef}>
         <Routes>
           <Route path="/" element={<Course />} />
-          <Route path="/intern" element={<Intern />} />
           <Route path="/intern/normal" element={<Normal />} />
           <Route path="/intern/honors" element={<Honors />} />
         </Routes>

@@ -11,7 +11,7 @@ const Honors = () => {
 
         <p className='text-end mb-2 text-xl lead4'>This is to certify that</p>
 
-        <textarea rows='1' className='text-end font-kunstler text-[#20497d] text-[90px] w-full -mb-5 focus:outline-none mx-auto '>Gurban Guliyev</textarea>
+        <textarea rows='1' className='text-end font-kunstler text-[#20497d] text-[90px] w-full -mb-5 focus:outline-none mx-auto '>Khayal Khudiyev</textarea>
 
         <textarea rows={1} className='focus:outline-none text-end  text-lg'>has successfully completed 3 months Data Science Internship at</textarea>
         <textarea rows={1} className='focus:outline-none text-end -mt-1 text-lg'>QSS Analytics onOctober 14 , 2023</textarea>
@@ -21,7 +21,8 @@ const Honors = () => {
           enable Gurban to be a professional expert in the future
         </textarea>
         <div className=' flex flex-col   text-start mt-7 '>
-          <p>Accomplished programs during internship:</p>          <textarea rows="1" className='focus:outline-none leading-4'>•  Data Science for Python</textarea>
+          <p>Accomplished programs during internship:</p>
+          <textarea rows="1" className='focus:outline-none leading-4'>•  Data Science for Python</textarea>
           <textarea rows="1" className='focus:outline-none leading-6'>•  Machine Learning with Python</textarea>
           <textarea rows="1" className='focus:outline-none leading-6'>•  Deep Learning with Python</textarea>
           <textarea rows="1" className='focus:outline-none leading-6'>•  SQL for Data Science</textarea>
