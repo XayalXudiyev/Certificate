@@ -33,5 +33,4 @@ textarea :focus {
     font-family: "KunstlerScript";
     src: url("../src/assets/sa/s.ttf")
         format("truetype");
-    /* Add more src declarations for other font formats if needed */
 }

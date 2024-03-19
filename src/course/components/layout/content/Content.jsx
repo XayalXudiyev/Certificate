@@ -47,7 +47,7 @@ const Content = () => {
           {title}
         </textarea>
         <textarea rows="1" className='w-full focus:outline-none text-2xl  text-[#e2175c] font-bold'>Data Science Bootcamp</textarea>
-        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="8" className='content w-full focus:outline-none tracking-wide text-justify leading-5 font-medium my-1'>
+        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="8" className='content w-full focus:outline-none text-[15] tracking-[-0.040em] text-justify leading-[19px] font-medium my-1'>
           {content}
         </textarea>
       </div>
@@ -59,22 +59,25 @@ const Content = () => {
             <div className='pt-2 relative'>
               <img src={EtibarM} alt="" className='absolute bottom-6 m-2' />
 
-              <hr className='' />
-
-              <p className='font-medium text-lg'>Etibar Huseynli</p>
-              <p className='text-sm font-light leading-3'>Chief Data Scientist</p>
+              <div className=' border-t-[1px] border-black'>
+                <p className='font-medium text-lg'>Etibar Huseynli</p>
+                <p className='text-sm font-light leading-3'>Chief Data Scientist</p>
+              </div>
             </div>
             <div className='pt-2 relative'>
               <img src={Malakkhanim} alt="" className='absolute bottom-9 left-10  w-24' />
-              <hr className='' />
-              <p className='font-medium text-lg'>Malakkhanim Gurbanova</p>
-              <p className='text-sm font-light leading-3'>Program Manager</p>
+              <div className=' border-t-[1px] border-black'>
+                <p className='font-medium text-lg'>Malakkhanim Gurbanova</p>
+                <p className='text-sm font-light leading-3'>Program Manager</p>
+              </div>
+
             </div>
             <div className='pt-2 relative'>
               <img src={Cavid} alt="" className='absolute bottom-11 block w-svw ' />
-              <hr className='' />
-              <p className='font-medium text-lg'>Javid Mammadov</p>
-              <p className='text-sm font-light leading-3'>Career Advisor</p>
+              <div className=' border-t-[1px] border-black'>
+                <p className='font-medium text-lg'>Javid Mammadov</p>
+                <p className='text-sm font-light leading-3'>Career Advisor</p>
+              </div>
             </div>
           </div>
 
@@ -83,9 +86,9 @@ const Content = () => {
           </div>
         </div>
         <div className='flex justify-between items-center mt-6 text-xs px-8 '>
-          <p className='text-[#959699]   font-bold'>The validity of certificate can be verified online at : <a href="http://www.dsa.az/verification">www.dsa.az/verification</a></p>
-          <div className=' flex  tracking-[5px] pl-9 '>Certificate ID:<textarea className=' tracking-[5px]  focus:outline-none' rows='1'>SQL-8948780</textarea></div>
-          <p ><textarea rows="1" className='tracking-[5px] focus:outline-none w-52 text-end'>14 January,2023</textarea></p>
+          <p className='text-[#959699] font-bold'>The validity of certificate can be verified online at : <a href="http://www.dsa.az/verification">www.dsa.az/verification</a></p>
+          <div className=' flex tracking-[5px] flex-1  justify-end '>Certificate ID:<textarea className='tracking-[5px] focus:outline-none' rows='1'>SQL-8948780</textarea></div>
+          <div ><textarea rows="1" className='tracking-[5px] focus:outline-none mt-1  w-[190px] text-end'>September 14 2023</textarea></div>
         </div>
       </div>
 

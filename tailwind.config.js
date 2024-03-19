@@ -11,7 +11,6 @@ export default {
       },
       screens:{
         print:{raw:'print'},
-        // screen:{raw:'print'}
 
       }
     },
