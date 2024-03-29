@@ -17,12 +17,12 @@ const DropdownMenu = ({ options, onChange }) => {
     return (
         <div className="relative inline-block mt-px">
             <div className=' relative '>
-            <div className='absolute h-[0.5px] w-16 left-[-23px] bg-[#c6345d]'></div>
-            <div className='absolute h-[0.5px] top-[0.5px] w-16 left-[-21px] bg-[#c6345d]'></div>
-            <div className='absolute h-[2px] top-[1px] w-16 left-[-21px] bg-[#c6345d]'></div>
-            <div className='absolute h-[2px] top-[2px] w-16 left-[-15px] bg-[#c6345d]'></div>
-            <div className='absolute h-[2px] top-[4px] w-16 left-[-12px] bg-[#c6345d]'></div>
-            <div className='absolute h-[4px] top-[5px] w-16 left-[-10px] bg-[#c6345d]'></div>
+                <div className='absolute h-[0.5px] w-16 left-[-23px] bg-[#c6345d]'></div>
+                <div className='absolute h-[0.5px] top-[0.5px] w-16 left-[-21px] bg-[#c6345d]'></div>
+                <div className='absolute h-[2px] top-[1px] w-16 left-[-21px] bg-[#c6345d]'></div>
+                <div className='absolute h-[2px] top-[2px] w-16 left-[-15px] bg-[#c6345d]'></div>
+                <div className='absolute h-[2px] top-[4px] w-16 left-[-12px] bg-[#c6345d]'></div>
+                <div className='absolute h-[4px] top-[5px] w-16 left-[-10px] bg-[#c6345d]'></div>
                 <div className="absolute top-[-14px] left-[-4px] " style={{
                     borderLeft: '22px solid #c6345d',
                     borderTop: '35px solid transparent',

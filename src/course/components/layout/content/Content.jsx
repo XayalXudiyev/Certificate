@@ -43,11 +43,11 @@ const Content = () => {
     <div className='print:mx-3'>
       <div className='px-16 font-montserrat'>
         <textarea rows='1' className='w-full focus:outline-none capitalize pb-2 -tracking-wide  my-2 font-light text-5xl'>Xəyal xudiyev</textarea>
-        <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title w-full focus:outline-none text-[18px] text-justify leading-[22px] font-medium -tracking-wider '>
+        <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title w-full focus:outline-none text-lg text-justify leading-[22px] font-medium tracking-[-0.018em] '>
           {title}
         </textarea>
-        <textarea rows="1" className='w-full focus:outline-none text-2xl pb-2 pt-2  text-[#e2175c] font-bold'>Data Science Bootcamp</textarea>
-        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="6" className=' content w-full focus:outline-none text-[16px] -tracking-wider  text-justify leading-[19px] font-medium my-1'>
+        <textarea rows="1" className='w-full focus:outline-none text-2xl pb-2 pt-2  text-[#e2175c] font-bold tracking-tight'>Data Science Bootcamp</textarea>
+        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="6" className=' content w-full focus:outline-none text-[15px] print:tracking-[-0.070em]  text-justify leading-[19px] font-medium my-1'>
           {content}
         </textarea>
       </div>
@@ -55,28 +55,28 @@ const Content = () => {
       <div className='flex-col px-10'>
         <div className='flex justify-between items-end mt-2'>
 
-          <div className='flex  text-start px-8 gap-5'>
+          <div className='flex  text-start px-8 gap-9'>
             <div className='pt-2 relative'>
               <img src={EtibarM} alt="" className='absolute bottom-6 m-2' />
 
               <div className=' border-t-[1px] border-black'>
-                <p className='font-medium text-lg'>Etibar Huseynli</p>
-                <p className='text-sm font-light leading-3'>Chief Data Scientist</p>
+                <p className='text-base font-semibold '>Etibar Huseynli</p>
+                <p className='text-xs  leading-3'>Chief Data Scientist</p>
               </div>
             </div>
             <div className='pt-2 relative'>
               <img src={Malakkhanim} alt="" className='absolute bottom-7 left-10  w-24' />
               <div className=' border-t-[1px] border-black'>
-                <p className='font-medium text-lg'>Malakkhanim Gurbanova</p>
-                <p className='text-sm font-light leading-3'>Program Manager</p>
+                <p className=' text-base font-semibold'>Malakkhanim Gurbanova</p>
+                <p className='text-xs leading-3'>Program Manager</p>
               </div>
 
             </div>
             <div className='pt-2 relative'>
               <img src={Cavid} alt="" className='absolute bottom-11 block w-svw ' />
               <div className=' border-t-[1px] border-black'>
-                <p className='font-medium text-lg'>Javid Mammadov</p>
-                <p className='text-sm font-light leading-3'>Career Advisor</p>
+                <p className='text-base font-semibold '>Javid Mammadov</p>
+                <p className='text-xs  leading-3'>Career Advisor</p>
               </div>
             </div>
           </div>
