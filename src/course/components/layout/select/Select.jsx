@@ -11,7 +11,7 @@ const Select = () => {
 
 
   return (
-    <div className='p-5 pb-0'>
+    <div className='p-5 pb-0 print:px-12'>
       <div className=' '>
         <Hero />
       </div>

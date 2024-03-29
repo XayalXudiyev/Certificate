@@ -40,14 +40,14 @@ const Content = () => {
 
 
   return (
-    <div>
+    <div className='print:mx-3'>
       <div className='px-16 font-montserrat'>
-        <textarea rows='1' className='w-full focus:outline-none capitalize pb-2 my-2 font-light text-5xl'>Xəyal xudiyev</textarea>
-        <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title  w-full focus:outline-none text-xl text-justify leading-[22px] font-medium tracking-wide '>
+        <textarea rows='1' className='w-full focus:outline-none capitalize pb-2 -tracking-wide  my-2 font-light text-5xl'>Xəyal xudiyev</textarea>
+        <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title w-full focus:outline-none text-[18px] text-justify leading-[22px] font-medium -tracking-wider '>
           {title}
         </textarea>
         <textarea rows="1" className='w-full focus:outline-none text-2xl pb-2 pt-2  text-[#e2175c] font-bold'>Data Science Bootcamp</textarea>
-        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="6" className=' content w-full focus:outline-none text-[16px] tracking-[-0.040em] text-justify leading-[19px] font-medium my-1'>
+        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="6" className=' content w-full focus:outline-none text-[16px] -tracking-wider  text-justify leading-[19px] font-medium my-1'>
           {content}
         </textarea>
       </div>
@@ -55,7 +55,7 @@ const Content = () => {
       <div className='flex-col px-10'>
         <div className='flex justify-between items-end mt-2'>
 
-          <div className='flex gap-16 text-start px-8 '>
+          <div className='flex  text-start px-8 gap-5'>
             <div className='pt-2 relative'>
               <img src={EtibarM} alt="" className='absolute bottom-6 m-2' />
 
@@ -85,10 +85,19 @@ const Content = () => {
             <img src={Logo} alt="" className='w-72 mr-5 ' />
           </div>
         </div>
-        <div className='flex justify-between items-center mt-6 text-xs px-8 '>
+        <div className='flex justify-between items-center mt-6 text-xs pl-8 '>
           <p className='text-[#959699] font-bold'>The validity of certificate can be verified online at : <a href="http://www.dsa.az/verification">www.dsa.az/verification</a></p>
-          <div className=' flex tracking-[5px] flex-1  justify-end '>Certificate ID:<textarea className='tracking-[5px] focus:outline-none' rows='1'>SQL-8948780</textarea></div>
-          <div ><textarea rows="1" className='tracking-[5px] focus:outline-none mt-1  w-[190px] text-end'>September 14 2023</textarea></div>
+          <div className='flex gap-0'>
+
+            <div className=' flex tracking-[4px] flex-1 items-center text-xs justify-end '>
+              Certificate ID:
+              <textarea className='tracking-[4px] focus:outline-none' rows='1'>SQL-8948780
+              </textarea>
+            </div>
+            <div >
+              <textarea rows="1" className='tracking-[4px] focus:outline-none mt-1'>September 30 2023</textarea>
+            </div>
+          </div>
         </div>
       </div>
 
