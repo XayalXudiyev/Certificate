@@ -35,6 +35,7 @@ const Content = () => {
   useEffect(() => {
     const { title: newTitle, content: newContent } = contentData[selectedValue];
     setTitle(newTitle);
+    // TEST
     setContent(newContent);
   }, [selectedValue]);
 
