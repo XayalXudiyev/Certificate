@@ -42,7 +42,7 @@ const Content = () => {
 
 
   return (
-    <div className='print:mx-3'>
+    <div className='print:mr-3'>
       <div className='px-16 font-montserrat'>
         <textarea rows='1' className='w-full focus:outline-none capitalize pb-2 -tracking-wide  my-2 font-light text-5xl'>Xəyal xudiyev</textarea>
         <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title w-full focus:outline-none text-lg text-justify leading-[22px] font-medium tracking-[-0.018em] '>
@@ -88,12 +88,12 @@ const Content = () => {
           </div>
         </div>
         <div className='flex justify-between items-center mt-6 text-xs pl-8 '>
-          <p className='text-[#959699] font-bold'>The validity of certificate can be verified online at : <a href="http://www.dsa.az/verification">www.dsa.az/verification</a></p>
+          <p className='text-[#959699] font-semibold text-xs'>The validity of certificate can be verified online at : <a href="http://www.dsa.az/verification">www.dsa.az/verification</a></p>
           <div className='flex gap-0'>
 
             <div className=' flex tracking-[4px] flex-1 items-center text-xs'>
               Certificate ID:
-              <textarea className='tracking-[4px] focus:outline-none w-32 mr-8' rows='1'>SQL-8948780
+              <textarea className='tracking-[4px] focus:outline-none text-xs print:text-xs w-32 mr-8' rows='1'>SQL-8948780
               </textarea>
             </div>
             <div >
