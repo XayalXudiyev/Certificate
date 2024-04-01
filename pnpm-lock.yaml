@@ -11,6 +11,9 @@ dependencies:
   antd:
     specifier: ^5.14.1
     version: 5.14.1(react-dom@18.2.0)(react@18.2.0)
+  certificate:
+    specifier: 'link:'
+    version: 'link:'
   file-saver:
     specifier: ^2.0.5
     version: 2.0.5
