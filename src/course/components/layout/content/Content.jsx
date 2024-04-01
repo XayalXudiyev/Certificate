@@ -35,6 +35,8 @@ const Content = () => {
   useEffect(() => {
     const { title: newTitle, content: newContent } = contentData[selectedValue];
     setTitle(newTitle);
+    // TEST
+    
     setContent(newContent);
   }, [selectedValue]);
 
@@ -89,13 +91,13 @@ const Content = () => {
           <p className='text-[#959699] font-bold'>The validity of certificate can be verified online at : <a href="http://www.dsa.az/verification">www.dsa.az/verification</a></p>
           <div className='flex gap-0'>
 
-            <div className=' flex tracking-[4px] flex-1 items-center text-xs justify-end '>
+            <div className=' flex tracking-[4px] flex-1 items-center text-xs'>
               Certificate ID:
-              <textarea className='tracking-[4px] focus:outline-none' rows='1'>SQL-8948780
+              <textarea className='tracking-[4px] focus:outline-none w-32 mr-8' rows='1'>SQL-8948780
               </textarea>
             </div>
             <div >
-              <textarea rows="1" className='tracking-[4px] focus:outline-none mt-1'>September 30 2023</textarea>
+              <textarea rows="1" className=' w-44 tracking-[4px] focus:outline-none mt-1'>September 30 2023</textarea>
             </div>
           </div>
         </div>
