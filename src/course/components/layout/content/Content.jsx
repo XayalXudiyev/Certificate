@@ -42,14 +42,14 @@ const Content = () => {
 
 
   return (
-    <div className='print:mr-3'>
+    <div className='print:mx-3 '>
       <div className='px-16 font-montserrat'>
         <textarea rows='1' className='w-full focus:outline-none capitalize pb-2 -tracking-wide  my-2 font-light text-5xl'>Xəyal xudiyev</textarea>
-        <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title w-full focus:outline-none text-lg text-justify leading-[22px] font-medium tracking-[-0.018em] '>
+        <textarea onChange={(e) => setTitle(e.target.value)} value={title} rows="4" className='title w-full focus:outline-none text-[17px] text-justify leading-[22px] font-medium tracking-[-0.018em] '>
           {title}
         </textarea>
         <textarea rows="1" className='w-full focus:outline-none text-2xl pb-2 pt-2  text-[#e2175c] font-bold tracking-tight'>Data Science Bootcamp</textarea>
-        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="6" className=' content w-full focus:outline-none text-[15px] print:tracking-[-0.070em]  text-justify leading-[19px] font-medium my-1'>
+        <textarea onChange={(e) => setContent(e.target.value)} value={content} rows="6" className=' content w-full focus:outline-none text-[14px] print:tracking-[-0.070em]  text-justify leading-[19px] font-medium my-1'>
           {content}
         </textarea>
       </div>

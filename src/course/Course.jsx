@@ -4,9 +4,9 @@ import Content from './components/layout/content/Content'
 
 const Course = () => {
     return (
-        <div>
+        <div className='print:mt-5'>
             <Select />
-            <Content />
+            <Content/>
         </div>
     )
 }
