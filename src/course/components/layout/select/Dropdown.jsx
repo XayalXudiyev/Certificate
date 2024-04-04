@@ -17,14 +17,14 @@ const DropdownMenu = ({ options, onChange }) => {
     return (
         <div className="relative inline-block mt-px">
             <div className=' relative '>
-                <div className='absolute h-[0.5px] w-16 left-[-23px] bg-[#c6345d]'></div>
-                <div className='absolute h-[0.5px] top-[0.5px] w-16 left-[-22px] bg-[#c6345d]'></div>
-                <div className='absolute h-[2px] top-[1px] w-16 left-[-21px] bg-[#c6345d]'></div>
-                <div className='absolute h-[2px] top-[2px] w-16 left-[-15px] bg-[#c6345d]'></div>
-                <div className='absolute h-[2px] top-[4px] w-16 left-[-12px] bg-[#c6345d]'></div>
-                <div className='absolute h-[4px] top-[5px] w-16 left-[-10px] bg-[#c6345d]'></div>
+                <div className='absolute h-[0.5px] w-16 left-[-23px] bg-[#e31f60]'></div>
+                <div className='absolute h-[0.5px] top-[0.5px] w-16 left-[-22px] bg-[#e31f60]'></div>
+                <div className='absolute h-[2px] top-[1px] w-16 left-[-21px] bg-[#e31f60]'></div>
+                <div className='absolute h-[2px] top-[2px] w-16 left-[-15px] bg-[#e31f60]'></div>
+                <div className='absolute h-[2px] top-[4px] w-16 left-[-12px] bg-[#e31f60]'></div>
+                <div className='absolute h-[4px] top-[5px] w-16 left-[-10px] bg-[#e31f60]'></div>
                 <div className="absolute top-[-14px] left-[-4px] " style={{
-                    borderLeft: '22px solid #c6345d',
+                    borderLeft: '22px solid #e31f60',
                     borderTop: '35px solid transparent',
                     borderBottom: '36px solid transparent',
                     width: '0',
@@ -33,14 +33,14 @@ const DropdownMenu = ({ options, onChange }) => {
                 }}>
                 </div>
 
-                <button type="button" onClick={toggleDropdown} className=" bg-[#c6345d] w-fit rounded-l-full px-12 h-10 text-white font-bold text-xl">
+                <button type="button" onClick={toggleDropdown} className=" bg-[#e31f60] w-fit rounded-l-full px-12 h-10 text-white font-bold text-xl">
                     {selectedOption ? selectedOption.value : 'Select'}
                 </button>
             </div>
             {
                 isOpen && (
                     <div className="absolute right-0 text-sm focus:outline-none ">
-                        <div className=" bg-[#c6345d] text-white  rounded-b-lg">
+                        <div className=" bg-[#e31f60] text-white  rounded-b-lg">
                             {options.map((option, index) => (
                                 <button
                                     key={index}
