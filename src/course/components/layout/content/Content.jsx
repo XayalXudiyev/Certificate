@@ -62,14 +62,14 @@ const Content = () => {
               <img src={EtibarM} alt="" className='absolute bottom-6 m-2' />
 
               <div className=' border-t-[1px] border-black'>
-                <p className='text-base font-normal font-montserrat'>Etibar Huseynli</p>
+                <p className='text-sm font-semibold font-montserrat'>Etibar Huseynli</p>
                 <p className='text-xs  leading-3'>Chief Data Scientist</p>
               </div>
             </div>
             <div className='pt-2 relative'>
               <img src={Malakkhanim} alt="" className='absolute bottom-7 left-10  w-24' />
               <div className=' border-t-[1px] border-black'>
-                <p className=' text-base font-normal font-montserrat'>Malakkhanim Gurbanova</p>
+                <p className=' text-sm font-semibold font-montserrat'>Malakkhanim Gurbanova</p>
                 <p className='text-xs leading-3'>Program Manager</p>
               </div>
 
@@ -77,7 +77,7 @@ const Content = () => {
             <div className='pt-2 relative'>
               <img src={Cavid} alt="" className='absolute bottom-11 block w-svw ' />
               <div className=' border-t-[1px] border-black'>
-                <p className='text-base font-normal font-montserrat'>Javid Mammadov</p>
+                <p className='text-sm font-semibold font-montserrat'>Javid Mammadov</p>
                 <p className='text-xs  leading-3'>Career Advisor</p>
               </div>
             </div>
